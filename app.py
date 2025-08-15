@@ -5,7 +5,7 @@ from streamlit_drawable_canvas import st_canvas
 from PIL import Image, ImageOps
 
 # Load trained model
-model = tf.keras.models.load_model("mnist_cnn_model.h5")
+model = tf.keras.models.load_model("mnist_cnn_model.keras")
 
 st.title("✏️ Draw a Digit & Let the CNN Guess!")
 st.write("Draw a digit (0–9) in the box below, then click 'Predict'.")
@@ -43,3 +43,4 @@ if st.button("Predict"):
         st.bar_chart(prediction[0])
     else:
         st.warning("Please draw something before predicting!")
+
