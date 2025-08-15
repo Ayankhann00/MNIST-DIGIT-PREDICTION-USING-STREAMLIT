@@ -5,7 +5,7 @@ from streamlit_drawable_canvas import st_canvas
 from PIL import Image, ImageOps
 
 # Load trained model
-model = tf.keras.models.load_model("mnist_cnn_model.keras")
+model = tf.keras.models.load_model("mnist_cnn_model.h5")
 
 st.title("✏️ Draw a Digit & Let the CNN Guess!")
 st.write("Draw a digit (0–9) in the box below, then click 'Predict'.")
